@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.AdminMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Admin">
+    <id column="adid" jdbcType="INTEGER" property="adid" />
+    <result column="adname" jdbcType="VARCHAR" property="adname" />
+    <result column="adpass" jdbcType="VARCHAR" property="adpass" />
+    <result column="roleid" jdbcType="INTEGER" property="roleid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    adid, adname, adpass, roleid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from admin
+    where adid = #{adid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from admin
+    where adid = #{adid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Admin">
+    insert into admin (adid, adname, adpass, 
+      roleid)
+    values (#{adid,jdbcType=INTEGER}, #{adname,jdbcType=VARCHAR}, #{adpass,jdbcType=VARCHAR}, 
+      #{roleid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Admin">
+    insert into admin
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="adid != null">
+        adid,
+      </if>
+      <if test="adname != null">
+        adname,
+      </if>
+      <if test="adpass != null">
+        adpass,
+      </if>
+      <if test="roleid != null">
+        roleid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="adid != null">
+        #{adid,jdbcType=INTEGER},
+      </if>
+      <if test="adname != null">
+        #{adname,jdbcType=VARCHAR},
+      </if>
+      <if test="adpass != null">
+        #{adpass,jdbcType=VARCHAR},
+      </if>
+      <if test="roleid != null">
+        #{roleid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Admin">
+    update admin
+    <set>
+      <if test="adname != null">
+        adname = #{adname,jdbcType=VARCHAR},
+      </if>
+      <if test="adpass != null">
+        adpass = #{adpass,jdbcType=VARCHAR},
+      </if>
+      <if test="roleid != null">
+        roleid = #{roleid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where adid = #{adid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Admin">
+    update admin
+    set adname = #{adname,jdbcType=VARCHAR},
+      adpass = #{adpass,jdbcType=VARCHAR},
+      roleid = #{roleid,jdbcType=INTEGER}
+    where adid = #{adid,jdbcType=INTEGER}
+  </update>
+</mapper>
