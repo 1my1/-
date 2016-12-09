@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.AdminMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Admin">
+    <id column="adid" jdbcType="INTEGER" property="adid" />
+    <result column="adname" jdbcType="VARCHAR" property="adname" />
+    <result column="adpass" jdbcType="VARCHAR" property="adpass" />
+    <result column="roleid" jdbcType="INTEGER" property="roleid" />
+  </resultMap>
+  <resultMap type="cn.edu.nuc.spring.entity.Admin" id="admin_role">
+       <id column="adid" jdbcType="INTEGER" property="adid"/>
+       <result column="adname" jdbcType="VARCHAR" property="adname" />
+       <result column="adsessionid" jdbcType="VARCHAR" property="adsessionid"/>
+       <association property="role" javaType="cn.edu.nuc.spring.entity.Role">
+             <id column="roleid" jdbcType="INTEGER" property="roleid"/>
+             <result column="rolename" jdbcType="VARCHAR" property="rolename"/>
+       </association>
+  </resultMap>
+  <sql id="Base_Column_List">
+    adid, adname, adpass, roleid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Admin" resultMap="admin_role">
+        select admin.adname,admin.adid,admin.adsessionid,role.roleid,role.rolename from admin 
+        LEFT JOIN role on admin.roleid=role.roleid 
+        where admin.adid=#{adid}
+  </select>
+  <select id="adminLists" resultMap="admin_role">
+          select admin.adname,admin.adid,admin.adsessionid,role.roleid,role.rolename from admin 
+        LEFT JOIN role on admin.roleid=role.roleid
+        <if test="admin.adname!='' and admin.adname!=null">
+             where admin.adname LIKE CONCAT(CONCAT('%', #{admin.adname}),'%')
+        </if> 
+         LIMIT #{pc.pagestart},#{pc.pageend}
+  </select>
+  <select id="rsCountCla" parameterType="cn.edu.nuc.spring.entity.Classes" resultType="java.lang.Integer">
+        select count(*) as count from(SELECT claid,claname from classes
+            <if test="claname!='' and claname!=null">
+                 where claname LIKE CONCAT(CONCAT('%', #{claname}),'%')
+            </if>
+        ) a
+  </select>
+  <select id="classesLists" resultType="cn.edu.nuc.spring.entity.Classes">
+       SELECT * FROM classes 
+       <where>
+            deptid is NULL
+            <if test="classes.claname!='' and classes.claname!=null">
+                 claname LIKE CONCAT(CONCAT('%', #{classes.claname}),'%')
+            </if>
+       </where>
+       <if test="pc.currentindex!=null and pc.currentindex!=''">
+         limit #{pc.pagestart},#{pc.pageend}
+        </if>
+  </select>
+  <select id="rsCount" parameterType="cn.edu.nuc.spring.entity.Admin" resultType="java.lang.Integer">
+        select count(*) as count from(SELECT adid,adname from admin
+            <if test="adname!='' and adname!=null">
+                 where adname LIKE CONCAT(CONCAT('%', #{adname}),'%')
+            </if>
+        ) a
+  </select>
+  <select id="selectOneAdmin" parameterType="cn.edu.nuc.spring.entity.Admin" resultMap="admin_role">
+        select admin.adname,admin.adid,admin.adsessionid,role.roleid,role.rolename from admin 
+        LEFT JOIN role on admin.roleid=role.roleid 
+        where admin.adname=#{adname} and admin.adpass=#{adpass} and role.rolestatus=1
+  </select>
+  <select id="loadRole" resultType="cn.edu.nuc.spring.entity.Role">
+       select roleid,rolename from role where roleid!=-1 and rolestatus=1
+  </select>
+  <delete id="deleteMany">
+    delete from admin
+    <where>
+       adid
+       <foreach collection="list" item="id" open="in (" close=")" separator=",">
+           #{id}
+       </foreach>
+    </where>
+  </delete>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from admin
+    where adid = #{adid,jdbcType=INTEGER}
+  </delete>
+  <insert id="addAdmin" parameterType="cn.edu.nuc.spring.entity.Admin">
+    insert into admin (adid, adname, adpass, 
+      roleid)
+    values (#{adid,jdbcType=INTEGER}, #{adname,jdbcType=VARCHAR}, #{adpass,jdbcType=VARCHAR}, 
+      #{role.roleid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Admin">
+    insert into admin
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="adid != null">
+        adid,
+      </if>
+      <if test="adname != null">
+        adname,
+      </if>
+      <if test="adpass != null">
+        adpass,
+      </if>
+      <if test="roleid != null">
+        roleid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="adid != null">
+        #{adid,jdbcType=INTEGER},
+      </if>
+      <if test="adname != null">
+        #{adname,jdbcType=VARCHAR},
+      </if>
+      <if test="adpass != null">
+        #{adpass,jdbcType=VARCHAR},
+      </if>
+      <if test="roleid != null">
+        #{roleid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="doUpdate" parameterType="cn.edu.nuc.spring.entity.Admin">
+    update admin
+    <set>
+      <if test="adname != null">
+        adname = #{adname,jdbcType=VARCHAR},
+      </if>
+      <if test="adpass != null">
+        adpass = #{adpass,jdbcType=VARCHAR},
+      </if>
+      <if test="role.roleid != null">
+        roleid = #{role.roleid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where adid = #{adid,jdbcType=INTEGER}
+  </update>
+  <update id="updateAdminBySessionID" parameterType="cn.edu.nuc.spring.entity.Admin">
+       UPDATE admin SET adsessionid=#{adsessionid} WHERE adname=#{adname} AND adpass=#{adpass}
+  </update>
+  <update id="updateSessionID">
+       UPDATE admin SET adsessionid=#{sessionid} WHERE adname=#{adname} AND adid=#{adid}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Admin">
+    update admin
+    set adname = #{adname,jdbcType=VARCHAR},
+      adpass = #{adpass,jdbcType=VARCHAR},
+      roleid = #{roleid,jdbcType=INTEGER}
+    where adid = #{adid,jdbcType=INTEGER}
+  </update>
+  
+</mapper>

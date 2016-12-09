@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.ExamMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Exam">
+    <id column="examid" jdbcType="INTEGER" property="examid" />
+    <result column="examname" jdbcType="VARCHAR" property="examname" />
+    <result column="examstarttime" jdbcType="TIMESTAMP" property="examstarttime" />
+    <result column="examstoptime" jdbcType="TIMESTAMP" property="examstoptime" />
+    <result column="claid" jdbcType="INTEGER" property="claid" />
+    <result column="claname" jdbcType="VARCHAR" property="claname" />
+    <result column="tqid" jdbcType="INTEGER" property="tqid" />
+    <result column="tqname" jdbcType="VARCHAR" property="tqname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    examid, examname, examstarttime, examstoptime, claid, tqid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List"/>
+    from exam
+    where examid = #{examid,jdbcType=INTEGER}
+  </select>
+  <select id="rsCount" parameterType="cn.edu.nuc.spring.entity.Exam" resultType="java.lang.Integer">
+        select count(*) as count from(SELECT * from exam
+            <if test="examname!='' and examname!=null">
+                 where examname LIKE CONCAT(CONCAT('%', #{examname}),'%')
+            </if>
+        ) a
+  </select>
+  <select id="examLists" resultMap="BaseResultMap">
+      select e.*,c.claname,tq.tqname FROM exam e 
+      LEFT JOIN classes c ON e.claid=c.claid
+      LEFT JOIN testquestion tq ON e.tqid=tq.tqid
+      <where>
+         <if test="exam.examname!=null and exam.examname!=''">
+            examname LIKE CONCAT(CONCAT('%', #{exam.examname}),'%')
+         </if>
+      </where>
+      <if test="pc.currentindex!=null and pc.currentindex!=''">
+       limit #{pc.pagestart},#{pc.pageend}
+      </if>
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from exam
+    where examid = #{examid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Exam">
+    insert into exam (examname, examstarttime, 
+      examstoptime, claid, tqid
+      )
+    values (#{examname,jdbcType=VARCHAR}, #{examstarttime,jdbcType=TIMESTAMP}, 
+      #{examstoptime,jdbcType=TIMESTAMP}, #{claid,jdbcType=INTEGER}, #{tqid,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Exam">
+    insert into exam
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="examid != null">
+        examid,
+      </if>
+      <if test="examname != null">
+        examname,
+      </if>
+      <if test="examstarttime != null">
+        examstarttime,
+      </if>
+      <if test="examstoptime != null">
+        examstoptime,
+      </if>
+      <if test="claid != null">
+        claid,
+      </if>
+      <if test="tqid != null">
+        tqid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="examid != null">
+        #{examid,jdbcType=INTEGER},
+      </if>
+      <if test="examname != null">
+        #{examname,jdbcType=VARCHAR},
+      </if>
+      <if test="examstarttime != null">
+        #{examstarttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="examstoptime != null">
+        #{examstoptime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="claid != null">
+        #{claid,jdbcType=INTEGER},
+      </if>
+      <if test="tqid != null">
+        #{tqid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Exam">
+    update exam
+    <set>
+      <if test="examname != null">
+        examname = #{examname,jdbcType=VARCHAR},
+      </if>
+      <if test="examstarttime != null">
+        examstarttime = #{examstarttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="examstoptime != null">
+        examstoptime = #{examstoptime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="claid != null">
+        claid = #{claid,jdbcType=INTEGER},
+      </if>
+      <if test="tqid != null">
+        tqid = #{tqid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where examid = #{examid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Exam">
+    update exam
+    set examname = #{examname,jdbcType=VARCHAR},
+      examstarttime = #{examstarttime,jdbcType=TIMESTAMP},
+      examstoptime = #{examstoptime,jdbcType=TIMESTAMP},
+      claid = #{claid,jdbcType=INTEGER},
+      tqid = #{tqid,jdbcType=INTEGER}
+    where examid = #{examid,jdbcType=INTEGER}
+  </update>
+</mapper>

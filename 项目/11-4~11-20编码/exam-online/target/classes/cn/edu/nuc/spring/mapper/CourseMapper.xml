@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.CourseMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Course">
+    <id column="couid" jdbcType="INTEGER" property="couid" />
+    <result column="couname" jdbcType="VARCHAR" property="couname" />
+    <result column="couremark" jdbcType="VARCHAR" property="couremark" />
+    <result column="coustatus" jdbcType="INTEGER" property="coustatus" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    couid, couname, couremark, coustatus
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from course
+    where couid = #{couid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from course
+    where couid = #{couid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Course">
+    insert into course (couid, couname, couremark, 
+      coustatus)
+    values (#{couid,jdbcType=INTEGER}, #{couname,jdbcType=VARCHAR}, #{couremark,jdbcType=VARCHAR}, 
+      #{coustatus,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Course">
+    insert into course
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="couid != null">
+        couid,
+      </if>
+      <if test="couname != null">
+        couname,
+      </if>
+      <if test="couremark != null">
+        couremark,
+      </if>
+      <if test="coustatus != null">
+        coustatus,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="couid != null">
+        #{couid,jdbcType=INTEGER},
+      </if>
+      <if test="couname != null">
+        #{couname,jdbcType=VARCHAR},
+      </if>
+      <if test="couremark != null">
+        #{couremark,jdbcType=VARCHAR},
+      </if>
+      <if test="coustatus != null">
+        #{coustatus,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Course">
+    update course
+    <set>
+      <if test="couname != null">
+        couname = #{couname,jdbcType=VARCHAR},
+      </if>
+      <if test="couremark != null">
+        couremark = #{couremark,jdbcType=VARCHAR},
+      </if>
+      <if test="coustatus != null">
+        coustatus = #{coustatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    where couid = #{couid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Course">
+    update course
+    set couname = #{couname,jdbcType=VARCHAR},
+      couremark = #{couremark,jdbcType=VARCHAR},
+      coustatus = #{coustatus,jdbcType=INTEGER}
+    where couid = #{couid,jdbcType=INTEGER}
+  </update>
+</mapper>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.TestQuestionMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.TestQuestion">
+    <id column="tqid" jdbcType="INTEGER" property="tqid" />
+    <id column="couid" jdbcType="INTEGER" property="couid" />
+    <result column="tqname" jdbcType="VARCHAR" property="tqname" />
+    <result column="tqscore" jdbcType="INTEGER" property="tqscore" />
+    <result column="tqinstruduce" jdbcType="VARCHAR" property="tqinstruduce" />
+    <result column="duration" jdbcType="INTEGER" property="duration" />
+  </resultMap>
+  <resultMap id="courseMap" type="cn.edu.nuc.spring.entity.Course">
+    <id column="couid" jdbcType="INTEGER" property="couid" />
+    <result column="couname" jdbcType="VARCHAR" property="couname" />
+    <result column="couremark" jdbcType="VARCHAR" property="couremark" />
+    <result column="coustatus" jdbcType="INTEGER" property="coustatus" />
+  </resultMap>
+  <sql id="course_List">
+    couid, couname, couremark, coustatus
+  </sql>
+  <sql id="Base_Column_List">
+    tqid,couid,tqname, tqscore, tqinstruduce, duration
+  </sql>
+  <select id="courseLists" parameterType="java.lang.Integer" resultMap="courseMap">
+    select 
+    <include refid="course_List" />
+    from course
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from testquestion
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </select>
+  <select id="testQuestionLists" resultMap="BaseResultMap">
+       select
+       <include refid="Base_Column_List"/>
+       from testquestion
+       <if test="testQuestion.tqname!='' and testQuestion.tqname!=null">
+             where tqname LIKE CONCAT(CONCAT('%', #{testQuestion.tqname}),'%')
+       </if>
+       limit #{pc.pagestart},#{pc.pageend}
+  </select>
+  <select id="tqLists" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from testquestion
+  </select>
+  <select id="rsCount" parameterType="cn.edu.nuc.spring.entity.TestQuestion" resultType="java.lang.Integer">
+        select count(*) as count from(SELECT * from testquestion
+            <if test="tqname!='' and tqname!=null">
+                 where tqname LIKE CONCAT(CONCAT('%', #{tqname}),'%')
+            </if>
+        ) a
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from testquestion
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.TestQuestion" useGeneratedKeys="true" keyProperty="tqid">
+    insert into testquestion (tqname,couid, tqscore, 
+      tqinstruduce, duration)
+    values (#{tqname,jdbcType=VARCHAR},#{couid,jdbcType=INTEGER},#{tqscore,jdbcType=INTEGER}, 
+      #{tqinstruduce,jdbcType=VARCHAR}, #{duration,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.TestQuestion">
+    insert into testquestion
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tqid != null">
+        tqid,
+      </if>
+      <if test="tqname != null">
+        tqname,
+      </if>
+      <if test="tqscore != null">
+        tqscore,
+      </if>
+      <if test="tqinstruduce != null">
+        tqinstruduce,
+      </if>
+      <if test="duration != null">
+        duration,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tqid != null">
+        #{tqid,jdbcType=INTEGER},
+      </if>
+      <if test="tqname != null">
+        #{tqname,jdbcType=VARCHAR},
+      </if>
+      <if test="tqscore != null">
+        #{tqscore,jdbcType=INTEGER},
+      </if>
+      <if test="tqinstruduce != null">
+        #{tqinstruduce,jdbcType=VARCHAR},
+      </if>
+      <if test="duration != null">
+        #{duration,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateTitleTqid">
+       update title set tqid=#{tqid,jdbcType=INTEGER} where titid=#{titid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.TestQuestion">
+    update testquestion
+    <set>
+      <if test="tqname != null">
+        tqname = #{tqname,jdbcType=VARCHAR},
+      </if>
+      <if test="tqscore != null">
+        tqscore = #{tqscore,jdbcType=INTEGER},
+      </if>
+      <if test="tqinstruduce != null">
+        tqinstruduce = #{tqinstruduce,jdbcType=VARCHAR},
+      </if>
+      <if test="duration != null">
+        duration = #{duration,jdbcType=INTEGER},
+      </if>
+    </set>
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.TestQuestion">
+    update testquestion
+    set tqname = #{tqname,jdbcType=VARCHAR},
+      tqscore = #{tqscore,jdbcType=INTEGER},
+      tqinstruduce = #{tqinstruduce,jdbcType=VARCHAR},
+      duration = #{duration,jdbcType=INTEGER}
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </update>
+</mapper>

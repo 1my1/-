@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.TitleMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Title">
+    <id column="titid" jdbcType="INTEGER" property="titid" />
+    <result column="titname" jdbcType="VARCHAR" property="titname" />
+    <result column="tit_A" jdbcType="VARCHAR" property="titA" />
+    <result column="tit_B" jdbcType="VARCHAR" property="titB" />
+    <result column="tit_C" jdbcType="VARCHAR" property="titC" />
+    <result column="tit_D" jdbcType="VARCHAR" property="titD" />
+    <result column="tit_E" jdbcType="VARCHAR" property="titE" />
+    <result column="tit_F" jdbcType="VARCHAR" property="titF" />
+    <result column="titanswer" jdbcType="INTEGER" property="titanswer" />
+    <result column="titscore" jdbcType="INTEGER" property="titscore" />
+    <result column="couid" jdbcType="INTEGER" property="couid" />
+    <result column="tqid" jdbcType="INTEGER" property="tqid" />
+  </resultMap>
+  <resultMap id="title_testquest" type="cn.edu.nuc.spring.entity.Title">
+    <id column="titid" jdbcType="INTEGER" property="titid" />
+    <result column="titname" jdbcType="VARCHAR" property="titname" />
+    <result column="tit_A" jdbcType="VARCHAR" property="titA" />
+    <result column="tit_B" jdbcType="VARCHAR" property="titB" />
+    <result column="tit_C" jdbcType="VARCHAR" property="titC" />
+    <result column="tit_D" jdbcType="VARCHAR" property="titD" />
+    <result column="tit_E" jdbcType="VARCHAR" property="titE" />
+    <result column="tit_F" jdbcType="VARCHAR" property="titF" />
+    <result column="titanswer" jdbcType="INTEGER" property="titanswer" />
+    <result column="titscore" jdbcType="INTEGER" property="titscore" />
+    <result column="tqname" jdbcType="VARCHAR" property="tqname" />
+    <result column="tqid" jdbcType="INTEGER" property="tqid" />
+  </resultMap>
+  <resultMap id="courseMap" type="cn.edu.nuc.spring.entity.Course">
+    <id column="couid" jdbcType="INTEGER" property="couid" />
+    <result column="couname" jdbcType="VARCHAR" property="couname" />
+    <result column="couremark" jdbcType="VARCHAR" property="couremark" />
+    <result column="coustatus" jdbcType="INTEGER" property="coustatus" />
+  </resultMap>
+  <sql id="course_List">
+    couid, couname, couremark, coustatus
+  </sql>
+  <sql id="Base_Column_List">
+    titid, titname, tit_A, tit_B, tit_C, tit_D, tit_E, tit_F, titanswer, titscore, couid, 
+    tqid
+  </sql>
+  <select id="courseLists" parameterType="java.lang.Integer" resultMap="courseMap">
+    select 
+    <include refid="course_List" />
+    from course
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from title
+    where titid = #{titid,jdbcType=INTEGER}
+  </select>
+  <select id="titleLists" resultMap="title_testquest">
+        select t.*,cou.couname from 
+        title t LEFT JOIN course cou on t.couid=cou.couid
+        <where>
+	        <if test="title.titname!='' and title.titname!=null">
+	             t.titname LIKE CONCAT(CONCAT('%', #{title.titname}),'%')
+	        </if>
+	        <if test="title.couid!='' and title.couid!=null">
+	             and t.couid=#{title.couid}
+	        </if>
+	        <if test="title.tqid!=null and title.tqid!=''">
+	             and t.tqid=#{title.tqid}
+	        </if>
+        </where>
+        <if test="pc.currentindex!=null and pc.currentindex!=''">
+         limit #{pc.pagestart},#{pc.pageend}
+        </if>
+  </select>
+  <select id="rsCount" parameterType="cn.edu.nuc.spring.entity.Title" resultType="java.lang.Integer">
+        select count(*) as count from(SELECT * from title
+            <if test="titname!='' and titname!=null">
+                 where titname LIKE CONCAT(CONCAT('%', #{titname}),'%')
+            </if>
+        ) a
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from title
+    where titid = #{titid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Title">
+    insert into title (titid, titname, tit_A, 
+      tit_B, tit_C, tit_D, tit_E, 
+      tit_F, titanswer, titscore, 
+      couid, tqid)
+    values (#{titid,jdbcType=INTEGER}, #{titname,jdbcType=VARCHAR}, #{titA,jdbcType=VARCHAR}, 
+      #{titB,jdbcType=VARCHAR}, #{titC,jdbcType=VARCHAR}, #{titD,jdbcType=VARCHAR}, #{titE,jdbcType=VARCHAR}, 
+      #{titF,jdbcType=VARCHAR}, #{titanswer,jdbcType=INTEGER}, #{titscore,jdbcType=INTEGER}, 
+      #{couid,jdbcType=INTEGER}, #{tqid,jdbcType=INTEGER})
+  </insert>
+  <insert id="addTitle" parameterType="cn.edu.nuc.spring.entity.Title">
+    insert into title
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="titid != null">
+        titid,
+      </if>
+      <if test="titname != null">
+        titname,
+      </if>
+      <if test="titA != null">
+        tit_A,
+      </if>
+      <if test="titB != null">
+        tit_B,
+      </if>
+      <if test="titC != null">
+        tit_C,
+      </if>
+      <if test="titD != null">
+        tit_D,
+      </if>
+      <if test="titE != null">
+        tit_E,
+      </if>
+      <if test="titF != null">
+        tit_F,
+      </if>
+      <if test="titanswer != null">
+        titanswer,
+      </if>
+      <if test="titscore != null">
+        titscore,
+      </if>
+      <if test="couid != null">
+        couid,
+      </if>
+      <if test="tqid != null">
+        tqid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="titid != null">
+        #{titid,jdbcType=INTEGER},
+      </if>
+      <if test="titname != null">
+        #{titname,jdbcType=VARCHAR},
+      </if>
+      <if test="titA != null">
+        #{titA,jdbcType=VARCHAR},
+      </if>
+      <if test="titB != null">
+        #{titB,jdbcType=VARCHAR},
+      </if>
+      <if test="titC != null">
+        #{titC,jdbcType=VARCHAR},
+      </if>
+      <if test="titD != null">
+        #{titD,jdbcType=VARCHAR},
+      </if>
+      <if test="titE != null">
+        #{titE,jdbcType=VARCHAR},
+      </if>
+      <if test="titF != null">
+        #{titF,jdbcType=VARCHAR},
+      </if>
+      <if test="titanswer != null">
+        #{titanswer,jdbcType=INTEGER},
+      </if>
+      <if test="titscore != null">
+        #{titscore,jdbcType=INTEGER},
+      </if>
+      <if test="couid != null">
+        #{couid,jdbcType=INTEGER},
+      </if>
+      <if test="tqid != null">
+        #{tqid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Title">
+    update title
+    <set>
+      <if test="titname != null">
+        titname = #{titname,jdbcType=VARCHAR},
+      </if>
+      <if test="titA != null">
+        tit_A = #{titA,jdbcType=VARCHAR},
+      </if>
+      <if test="titB != null">
+        tit_B = #{titB,jdbcType=VARCHAR},
+      </if>
+      <if test="titC != null">
+        tit_C = #{titC,jdbcType=VARCHAR},
+      </if>
+      <if test="titD != null">
+        tit_D = #{titD,jdbcType=VARCHAR},
+      </if>
+      <if test="titE != null">
+        tit_E = #{titE,jdbcType=VARCHAR},
+      </if>
+      <if test="titF != null">
+        tit_F = #{titF,jdbcType=VARCHAR},
+      </if>
+      <if test="titanswer != null">
+        titanswer = #{titanswer,jdbcType=INTEGER},
+      </if>
+      <if test="titscore != null">
+        titscore = #{titscore,jdbcType=INTEGER},
+      </if>
+      <if test="couid != null">
+        couid = #{couid,jdbcType=INTEGER},
+      </if>
+      <if test="tqid != null">
+        tqid = #{tqid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where titid = #{titid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Title">
+    update title
+    set titname = #{titname,jdbcType=VARCHAR},
+      tit_A = #{titA,jdbcType=VARCHAR},
+      tit_B = #{titB,jdbcType=VARCHAR},
+      tit_C = #{titC,jdbcType=VARCHAR},
+      tit_D = #{titD,jdbcType=VARCHAR},
+      tit_E = #{titE,jdbcType=VARCHAR},
+      tit_F = #{titF,jdbcType=VARCHAR},
+      titanswer = #{titanswer,jdbcType=INTEGER},
+      titscore = #{titscore,jdbcType=INTEGER},
+      couid = #{couid,jdbcType=INTEGER},
+      tqid = #{tqid,jdbcType=INTEGER}
+    where titid = #{titid,jdbcType=INTEGER}
+  </update>
+</mapper>

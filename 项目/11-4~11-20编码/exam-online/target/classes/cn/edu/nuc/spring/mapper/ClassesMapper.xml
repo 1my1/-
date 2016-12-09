@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.ClassesMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Classes">
+    <id column="claid" jdbcType="INTEGER" property="claid" />
+    <result column="claname" jdbcType="VARCHAR" property="claname" />
+    <result column="clastatus" jdbcType="INTEGER" property="clastatus" />
+    <result column="deptid" jdbcType="INTEGER" property="deptid" />
+    <result column="deptname" jdbcType="VARCHAR" property="deptname" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    claid, claname, clastatus, deptid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from classes
+    where claid = #{claid,jdbcType=INTEGER}
+  </select>
+  <select id="rsCount" parameterType="cn.edu.nuc.spring.entity.Classes" resultType="java.lang.Integer">
+        select count(*) as count from(SELECT claid,claname from classes
+            <if test="claname!='' and claname!=null">
+                 where claname LIKE CONCAT(CONCAT('%', #{claname}),'%')
+            </if>
+        ) a
+  </select>
+  <select id="classesLists" resultMap="BaseResultMap">
+      select c.*,d.deptname from classes c left join dept d on c.deptid=d.deptid
+      <where>
+      <if test="classes.claname!=null and classes.claname!=''">
+         c.claname like CONCAT(CONCAT('%', #{classes.claname}),'%')
+      </if> 
+      </where>
+      <if test="pc.currentindex!=null and pc.currentindex!=''">
+         limit #{pc.pagestart},#{pc.pageend}
+        </if>
+  </select>
+  <select id="claList" resultType="cn.edu.nuc.spring.entity.Classes">
+       select claid,claname from classes
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from classes
+    where claid = #{claid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Classes">
+    insert into classes (claid, claname, clastatus, 
+      deptid)
+    values (#{claid,jdbcType=INTEGER}, #{claname,jdbcType=VARCHAR}, #{clastatus,jdbcType=INTEGER}, 
+      #{deptid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Classes">
+    insert into classes
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="claid != null">
+        claid,
+      </if>
+      <if test="claname != null">
+        claname,
+      </if>
+      <if test="clastatus != null">
+        clastatus,
+      </if>
+      <if test="deptid != null">
+        deptid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="claid != null">
+        #{claid,jdbcType=INTEGER},
+      </if>
+      <if test="claname != null">
+        #{claname,jdbcType=VARCHAR},
+      </if>
+      <if test="clastatus != null">
+        #{clastatus,jdbcType=INTEGER},
+      </if>
+      <if test="deptid != null">
+        #{deptid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Classes">
+    update classes
+    <set>
+      <if test="claname != null">
+        claname = #{claname,jdbcType=VARCHAR},
+      </if>
+      <if test="clastatus != null">
+        clastatus = #{clastatus,jdbcType=INTEGER},
+      </if>
+      <if test="deptid != null">
+        deptid = #{deptid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where claid = #{claid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Classes">
+    update classes
+    set claname = #{claname,jdbcType=VARCHAR},
+      clastatus = #{clastatus,jdbcType=INTEGER},
+      deptid = #{deptid,jdbcType=INTEGER}
+    where claid = #{claid,jdbcType=INTEGER}
+  </update>
+  <update id="doUpdate">
+       update classes set deptid = #{deptid} where claid = #{claid}
+  </update>
+</mapper>

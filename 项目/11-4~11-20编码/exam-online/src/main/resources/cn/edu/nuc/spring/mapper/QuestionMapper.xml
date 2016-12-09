@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.QuestionMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Question">
+    <id column="tqid" jdbcType="INTEGER" property="tqid" />
+    <result column="tqname" jdbcType="VARCHAR" property="tqname" />
+    <result column="tqscore" jdbcType="INTEGER" property="tqscore" />
+    <result column="tqinstruduce" jdbcType="VARCHAR" property="tqinstruduce" />
+    <result column="tqstarttime" jdbcType="TIMESTAMP" property="tqstarttime" />
+    <result column="tqstoptime" jdbcType="TIMESTAMP" property="tqstoptime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    tqid, tqname, tqscore, tqinstruduce, tqstarttime, tqstoptime
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from testquestion
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from testquestion
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Question">
+    insert into testquestion (tqid, tqname, tqscore, 
+      tqinstruduce, tqstarttime, tqstoptime
+      )
+    values (#{tqid,jdbcType=INTEGER}, #{tqname,jdbcType=VARCHAR}, #{tqscore,jdbcType=INTEGER}, 
+      #{tqinstruduce,jdbcType=VARCHAR}, #{tqstarttime,jdbcType=TIMESTAMP}, #{tqstoptime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Question">
+    insert into testquestion
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="tqid != null">
+        tqid,
+      </if>
+      <if test="tqname != null">
+        tqname,
+      </if>
+      <if test="tqscore != null">
+        tqscore,
+      </if>
+      <if test="tqinstruduce != null">
+        tqinstruduce,
+      </if>
+      <if test="tqstarttime != null">
+        tqstarttime,
+      </if>
+      <if test="tqstoptime != null">
+        tqstoptime,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="tqid != null">
+        #{tqid,jdbcType=INTEGER},
+      </if>
+      <if test="tqname != null">
+        #{tqname,jdbcType=VARCHAR},
+      </if>
+      <if test="tqscore != null">
+        #{tqscore,jdbcType=INTEGER},
+      </if>
+      <if test="tqinstruduce != null">
+        #{tqinstruduce,jdbcType=VARCHAR},
+      </if>
+      <if test="tqstarttime != null">
+        #{tqstarttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tqstoptime != null">
+        #{tqstoptime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Question">
+    update testquestion
+    <set>
+      <if test="tqname != null">
+        tqname = #{tqname,jdbcType=VARCHAR},
+      </if>
+      <if test="tqscore != null">
+        tqscore = #{tqscore,jdbcType=INTEGER},
+      </if>
+      <if test="tqinstruduce != null">
+        tqinstruduce = #{tqinstruduce,jdbcType=VARCHAR},
+      </if>
+      <if test="tqstarttime != null">
+        tqstarttime = #{tqstarttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="tqstoptime != null">
+        tqstoptime = #{tqstoptime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Question">
+    update testquestion
+    set tqname = #{tqname,jdbcType=VARCHAR},
+      tqscore = #{tqscore,jdbcType=INTEGER},
+      tqinstruduce = #{tqinstruduce,jdbcType=VARCHAR},
+      tqstarttime = #{tqstarttime,jdbcType=TIMESTAMP},
+      tqstoptime = #{tqstoptime,jdbcType=TIMESTAMP}
+    where tqid = #{tqid,jdbcType=INTEGER}
+  </update>
+</mapper>

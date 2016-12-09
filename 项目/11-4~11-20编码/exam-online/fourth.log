@@ -1,0 +1,858 @@
+11:41:07.447 [main] DEBUG spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+11:41:07.457 [main] INFO  spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+11:41:07.458 [main] ERROR spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+11:41:07.463 [main] ERROR spring.test.Slf4jTest - try to throw an Exception
+java.lang.IllegalStateException: try to throw an Exception
+	at spring.test.Slf4jTest.testLogBack(Slf4jTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+11:51:45.094 [main] DEBUG spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+11:51:45.106 [main] INFO  spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+11:51:45.108 [main] ERROR spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+11:51:45.115 [main] ERROR spring.test.Slf4jTest - try to throw an Exception
+java.lang.IllegalStateException: try to throw an Exception
+	at spring.test.Slf4jTest.testLogBack(Slf4jTest.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:86)
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:38)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:459)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:675)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:382)
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:192)
+13:03:05.471 [main] DEBUG spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+13:03:05.479 [main] INFO  spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+13:03:05.480 [main] ERROR spring.test.Slf4jTest - Test the MessageFormat for 1 to 2 endTo 3
+16:29:05.302 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+16:29:05.312 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+16:29:05.312 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:29:05.312 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:29:05.313 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:29:05.313 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:29:05.316 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:29:05.316 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:29:05.316 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:29:05.316 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:29:05.608 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+16:29:05.649 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kebh03lqmva5w|46552445,name=1hgf4p79kebh03lqmva5w|46552445 registered.
+16:29:05.683 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kebh03lqmva5w|46552445,name=1hgf4p79kebh03lqmva5w|46552445 unregistered, in order to be reregistered after update.
+16:29:05.684 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kebh03lqmva5w|46552445,name=1hgf4p79kebh03lqmva5w|46552445 registered.
+16:29:05.751 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:29:05.862 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+16:29:05.862 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+16:29:05.863 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+16:29:05.864 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+16:29:05.864 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+16:29:05.865 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:29:05.865 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:29:05.976 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+16:29:05.976 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+16:29:05.977 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+16:29:05.977 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:29:05.978 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+16:29:05.978 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+16:29:06.013 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 W  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass roleList Ljava/util/List; 	Signature 1Ljava/util/List<Lcn/edu/nuc/spring/entity/Role;>; adsessionid <init> ()V Code
+16:29:06.014 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+16:29:06.014 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+16:29:06.029 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 +  cn/edu/nuc/spring/entity/Role  java/lang/Object roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+16:29:06.030 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+16:29:06.030 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+16:29:06.041 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+16:29:06.042 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+16:29:06.043 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+16:29:06.044 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+16:29:06.045 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+16:29:06.098 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:29:06.235 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+16:29:06.272 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+16:29:06.327 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+16:29:06.737 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+16:29:06.739 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+16:29:06.760 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+16:29:06.790 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+16:29:06.791 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+16:29:06.793 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy25
+16:29:06.795 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:29:06.797 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+16:29:06.798 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+16:29:06.798 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16:29:06.799 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+16:29:07.320 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+16:29:07.329 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ba19d2] was not registered for synchronization because synchronization is not active
+16:29:07.380 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgf4p79kebh03lqmva5w|46552445, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgf4p79kebh03lqmva5w|46552445, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/four, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+16:29:07.402 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:29:07.402 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:29:07.402 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:29:07.402 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:29:07.405 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@47fbb6b9 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+16:29:07.405 [main] DEBUG c.m.v.c.i.C3P0PooledConnectionPoolManager - Created new pool for auth, username (masked): 'ro******'.
+16:29:07.405 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+16:29:07.406 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+16:29:07.755 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@66a07502 [wrapping: com.mysql.jdbc.JDBC4Connection@30620af1]] will not be managed by Spring
+16:29:07.762 [main] DEBUG c.e.n.s.d.A.updateSessionID - ==>  Preparing: UPDATE admin SET adsessionid=? WHERE adname=? AND adpass=? 
+16:29:07.803 [main] DEBUG c.e.n.s.d.A.updateSessionID - ==> Parameters: 123(String), wh1234(String), wh1234(String)
+16:29:07.862 [main] DEBUG c.e.n.s.d.A.updateSessionID - <==    Updates: 1
+16:29:07.863 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7ba19d2]
+16:29:07.875 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kebh03lqmva5w|46552445,name=1hgf4p79kebh03lqmva5w|46552445 unregistered.
+16:29:07.876 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+16:29:07.876 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.resourcepool.BasicResourcePool - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@1984a8e6
+16:29:07.876 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.c.i.C3P0PooledConnectionPool - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@1984a8e6
+14:20:40.352 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:20:40.366 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:20:40.379 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:20:40.379 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:20:40.379 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:20:40.380 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:20:40.380 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:20:40.380 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:20:40.380 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:20:40.380 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:20:40.677 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:20:40.732 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kih7exiqo2neq|2f4bcaa5,name=1hgf4p79kih7exiqo2neq|2f4bcaa5 registered.
+14:20:40.775 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kih7exiqo2neq|2f4bcaa5,name=1hgf4p79kih7exiqo2neq|2f4bcaa5 unregistered, in order to be reregistered after update.
+14:20:40.776 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kih7exiqo2neq|2f4bcaa5,name=1hgf4p79kih7exiqo2neq|2f4bcaa5 registered.
+14:20:40.879 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:20:41.045 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:20:41.045 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:20:41.047 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:20:41.050 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:20:41.052 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:20:41.053 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:20:41.053 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:20:41.219 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:20:41.222 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:20:41.223 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:20:41.224 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:20:41.224 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:20:41.225 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:20:41.226 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:20:41.226 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:20:41.227 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:20:41.228 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:20:41.229 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:20:41.230 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:20:41.231 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:20:41.232 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:20:41.233 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:20:41.234 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:20:41.235 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:20:41.235 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:20:41.236 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:20:41.237 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:20:41.237 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:20:41.238 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:20:41.239 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:20:41.239 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:20:41.241 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:20:41.242 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:20:41.243 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:20:41.244 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:20:41.245 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:20:41.246 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:20:41.248 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:20:41.250 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:20:41.305 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:20:41.516 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:20:41.582 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kih7exiqo2neq|2f4bcaa5,name=1hgf4p79kih7exiqo2neq|2f4bcaa5 unregistered.
+14:20:41.582 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:26:36.533 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:26:36.543 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:26:36.544 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:26:36.544 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:26:36.544 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:26:36.544 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:26:36.547 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:26:36.547 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:26:36.547 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:26:36.547 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:26:36.828 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:26:36.870 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihf1r3z24652|7796af5d,name=1hgf4p79kihf1r3z24652|7796af5d registered.
+14:26:36.903 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihf1r3z24652|7796af5d,name=1hgf4p79kihf1r3z24652|7796af5d unregistered, in order to be reregistered after update.
+14:26:36.903 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihf1r3z24652|7796af5d,name=1hgf4p79kihf1r3z24652|7796af5d registered.
+14:26:36.994 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:26:37.116 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:26:37.117 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:26:37.118 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:26:37.119 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:26:37.121 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:26:37.122 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:26:37.122 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:26:37.264 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:26:37.265 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:26:37.266 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:26:37.267 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:26:37.267 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:26:37.268 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:26:37.269 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:26:37.271 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:26:37.271 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:26:37.272 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:26:37.273 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:26:37.274 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:26:37.274 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:26:37.275 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:26:37.275 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:26:37.276 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:26:37.276 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:26:37.276 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:26:37.277 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:26:37.277 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:26:37.277 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:26:37.278 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:26:37.279 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:26:37.279 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:26:37.315 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:26:37.316 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:26:37.317 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:26:37.318 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:26:37.318 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:26:37.319 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:26:37.319 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:26:37.320 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:26:37.369 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:26:37.546 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:26:37.580 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:26:37.631 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:26:37.674 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:26:37.727 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:26:37.793 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:26:38.227 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihf1r3z24652|7796af5d,name=1hgf4p79kihf1r3z24652|7796af5d unregistered.
+14:26:38.228 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:28:37.690 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:28:37.701 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:28:37.702 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:28:37.702 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:28:37.702 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:28:37.702 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:28:37.704 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:28:37.705 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:28:37.705 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:28:37.705 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:28:37.986 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:28:38.027 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihhn8k9qo87c|76640885,name=1hgf4p79kihhn8k9qo87c|76640885 registered.
+14:28:38.062 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihhn8k9qo87c|76640885,name=1hgf4p79kihhn8k9qo87c|76640885 unregistered, in order to be reregistered after update.
+14:28:38.063 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihhn8k9qo87c|76640885,name=1hgf4p79kihhn8k9qo87c|76640885 registered.
+14:28:38.138 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:28:38.281 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:28:38.281 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:28:38.282 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:28:38.283 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:28:38.285 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:28:38.286 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:28:38.287 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:28:38.453 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:28:38.454 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:28:38.454 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:28:38.455 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:28:38.456 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:28:38.457 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:28:38.457 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:28:38.458 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:28:38.458 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:28:38.460 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:28:38.461 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:28:38.461 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:28:38.462 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:28:38.464 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:28:38.464 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:28:38.465 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:28:38.466 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:28:38.466 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:28:38.468 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:28:38.470 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:28:38.470 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:28:38.471 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:28:38.473 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:28:38.473 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:28:38.474 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:28:38.475 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:28:38.477 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:28:38.478 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:28:38.479 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:28:38.480 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:28:38.481 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:28:38.483 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:28:38.567 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:28:38.799 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:28:38.847 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:28:38.906 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:28:38.975 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:28:39.050 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:28:39.149 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:28:39.502 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihhn8k9qo87c|76640885,name=1hgf4p79kihhn8k9qo87c|76640885 unregistered.
+14:28:39.502 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:29:31.939 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:29:31.949 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:29:31.949 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:29:31.949 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:29:31.950 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:29:31.950 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:29:31.952 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:29:31.952 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:29:31.952 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:29:31.952 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:29:32.261 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:29:32.301 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihit3f1i0lryi|45d34001,name=1hgf4p79kihit3f1i0lryi|45d34001 registered.
+14:29:32.333 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihit3f1i0lryi|45d34001,name=1hgf4p79kihit3f1i0lryi|45d34001 unregistered, in order to be reregistered after update.
+14:29:32.333 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihit3f1i0lryi|45d34001,name=1hgf4p79kihit3f1i0lryi|45d34001 registered.
+14:29:32.404 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:29:32.493 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:29:32.493 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:29:32.494 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:29:32.495 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:29:32.495 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:29:32.496 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:29:32.496 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:29:32.599 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:29:32.601 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:29:32.602 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:29:32.602 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:29:32.603 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:29:32.603 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:29:32.604 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:29:32.604 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:29:32.604 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:29:32.605 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:29:32.606 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:29:32.606 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:29:32.607 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:29:32.607 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:29:32.607 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:29:32.608 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:29:32.609 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:29:32.609 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:29:32.610 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:29:32.611 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:29:32.611 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:29:32.612 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:29:32.612 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:29:32.612 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:29:32.614 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:29:32.614 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:29:32.615 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:29:32.616 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:29:32.616 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:29:32.617 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:29:32.617 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:29:32.619 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:29:32.677 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:29:32.864 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:29:32.902 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:29:32.975 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:29:33.031 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:29:33.088 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:29:33.196 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:29:33.558 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihit3f1i0lryi|45d34001,name=1hgf4p79kihit3f1i0lryi|45d34001 unregistered.
+14:29:33.558 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:30:42.659 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:30:42.669 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:30:42.670 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:30:42.670 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:30:42.670 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:30:42.670 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:30:42.672 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:30:42.673 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:30:42.673 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:30:42.673 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:30:42.963 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:30:43.003 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihkbnwrtbt0j|68a124e5,name=1hgf4p79kihkbnwrtbt0j|68a124e5 registered.
+14:30:43.035 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihkbnwrtbt0j|68a124e5,name=1hgf4p79kihkbnwrtbt0j|68a124e5 unregistered, in order to be reregistered after update.
+14:30:43.036 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihkbnwrtbt0j|68a124e5,name=1hgf4p79kihkbnwrtbt0j|68a124e5 registered.
+14:30:43.118 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:30:43.207 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:30:43.208 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:30:43.209 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:30:43.209 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:30:43.210 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:30:43.210 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:30:43.211 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:30:43.311 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:30:43.313 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:30:43.313 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:30:43.314 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:30:43.315 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:30:43.315 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:30:43.316 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:30:43.316 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:30:43.316 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:30:43.318 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:30:43.319 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:30:43.319 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:30:43.320 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:30:43.320 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:30:43.321 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:30:43.322 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:30:43.322 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:30:43.322 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:30:43.323 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:30:43.324 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:30:43.324 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:30:43.325 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:30:43.325 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:30:43.326 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:30:43.327 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:30:43.327 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:30:43.328 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:30:43.329 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:30:43.329 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:30:43.330 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:30:43.330 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:30:43.332 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:30:43.385 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:30:43.551 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:30:43.594 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:30:43.644 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:30:43.685 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:30:43.736 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:30:43.799 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:30:44.093 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihkbnwrtbt0j|68a124e5,name=1hgf4p79kihkbnwrtbt0j|68a124e5 unregistered.
+14:30:44.093 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:33:17.636 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:33:17.648 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:33:17.648 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:33:17.648 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:33:17.648 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:33:17.648 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:33:17.651 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:33:17.651 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:33:17.651 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:33:17.651 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:33:17.944 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:33:17.982 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihnn8u1l8g1ky|300f2577,name=1hgf4p79kihnn8u1l8g1ky|300f2577 registered.
+14:33:18.015 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihnn8u1l8g1ky|300f2577,name=1hgf4p79kihnn8u1l8g1ky|300f2577 unregistered, in order to be reregistered after update.
+14:33:18.016 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihnn8u1l8g1ky|300f2577,name=1hgf4p79kihnn8u1l8g1ky|300f2577 registered.
+14:33:18.093 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:33:18.186 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:33:18.187 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:33:18.188 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:33:18.188 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:33:18.189 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:33:18.190 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:33:18.190 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:33:18.301 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:33:18.302 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:33:18.303 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:33:18.303 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:33:18.304 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:33:18.304 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:33:18.305 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:33:18.305 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:33:18.305 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:33:18.306 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:33:18.307 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:33:18.307 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:33:18.308 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:33:18.309 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:33:18.309 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:33:18.309 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:33:18.310 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:33:18.310 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:33:18.311 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:33:18.311 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:33:18.311 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:33:18.312 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:33:18.312 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:33:18.312 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:33:18.314 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:33:18.314 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:33:18.315 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:33:18.316 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:33:18.316 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:33:18.317 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:33:18.317 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:33:18.319 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:33:18.375 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:33:18.553 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:33:18.589 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:33:18.644 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:33:18.692 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:33:18.750 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:33:18.812 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:33:19.112 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihnn8u1l8g1ky|300f2577,name=1hgf4p79kihnn8u1l8g1ky|300f2577 unregistered.
+14:33:19.112 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:35:17.150 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:35:17.162 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:35:17.162 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:35:17.162 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:35:17.162 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:35:17.162 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:35:17.165 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:35:17.165 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:35:17.165 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:35:17.165 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:35:17.444 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:35:17.483 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihq7go1ejhphv|3740dfc9,name=1hgf4p79kihq7go1ejhphv|3740dfc9 registered.
+14:35:17.518 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihq7go1ejhphv|3740dfc9,name=1hgf4p79kihq7go1ejhphv|3740dfc9 unregistered, in order to be reregistered after update.
+14:35:17.519 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihq7go1ejhphv|3740dfc9,name=1hgf4p79kihq7go1ejhphv|3740dfc9 registered.
+14:35:17.593 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:35:17.680 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:35:17.681 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:35:17.682 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:35:17.683 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:35:17.683 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:35:17.684 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:35:17.684 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:35:17.792 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:35:17.793 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:35:17.793 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:35:17.794 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:35:17.794 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:35:17.795 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:35:17.795 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:35:17.796 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:35:17.796 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:35:17.797 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:35:17.798 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:35:17.798 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:35:17.799 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:35:17.800 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:35:17.800 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:35:17.801 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:35:17.801 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:35:17.802 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:35:17.802 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:35:17.803 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:35:17.803 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:35:17.804 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:35:17.804 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:35:17.804 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:35:17.805 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:35:17.806 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:35:17.807 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:35:17.807 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:35:17.808 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:35:17.809 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:35:17.809 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:35:17.811 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:35:17.863 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:35:18.035 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:35:18.072 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:35:18.123 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:35:18.169 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:35:18.220 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:35:18.283 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:35:18.582 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihq7go1ejhphv|3740dfc9,name=1hgf4p79kihq7go1ejhphv|3740dfc9 unregistered.
+14:35:18.582 [main] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:41:16.774 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+14:41:16.785 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+14:41:16.785 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:41:16.785 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:41:16.785 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:41:16.785 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:41:16.788 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:41:16.788 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:41:16.788 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:41:16.788 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:41:17.069 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+14:41:17.114 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihxwy87fumh0|6433aa85,name=1hgf4p79kihxwy87fumh0|6433aa85 registered.
+14:41:17.145 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihxwy87fumh0|6433aa85,name=1hgf4p79kihxwy87fumh0|6433aa85 unregistered, in order to be reregistered after update.
+14:41:17.145 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihxwy87fumh0|6433aa85,name=1hgf4p79kihxwy87fumh0|6433aa85 registered.
+14:41:17.226 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+14:41:17.317 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+14:41:17.317 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+14:41:17.318 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+14:41:17.318 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+14:41:17.319 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+14:41:17.320 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:41:17.320 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:41:17.439 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+14:41:17.439 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+14:41:17.440 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+14:41:17.440 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+14:41:17.441 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+14:41:17.441 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+14:41:17.441 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+14:41:17.442 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:41:17.442 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+14:41:17.443 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+14:41:17.444 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:41:17.444 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+14:41:17.445 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+14:41:17.446 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:41:17.447 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+14:41:17.448 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+14:41:17.448 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:41:17.449 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+14:41:17.449 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+14:41:17.450 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:41:17.450 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+14:41:17.451 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+14:41:17.451 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:41:17.451 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+14:41:17.452 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+14:41:17.453 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+14:41:17.454 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+14:41:17.454 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+14:41:17.455 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+14:41:17.455 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+14:41:17.456 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+14:41:17.457 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+14:41:17.509 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+14:41:17.694 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+14:41:17.728 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+14:41:17.776 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+14:41:17.813 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+14:41:17.869 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+14:41:17.930 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+14:41:18.332 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+14:41:18.345 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+14:41:18.367 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+14:41:18.401 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+14:41:18.402 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+14:41:18.404 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy28
+14:41:18.406 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+14:41:18.408 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+14:41:18.409 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+14:41:18.409 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+14:41:18.409 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+14:41:19.474 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+14:41:19.482 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18acd52c] was not registered for synchronization because synchronization is not active
+14:41:19.587 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgf4p79kihxwy87fumh0|6433aa85, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgf4p79kihxwy87fumh0|6433aa85, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/four, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+14:41:19.610 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+14:41:19.610 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+14:41:19.610 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+14:41:19.610 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+14:41:19.629 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@5260310f config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+14:41:19.630 [main] DEBUG c.m.v.c.i.C3P0PooledConnectionPoolManager - Created new pool for auth, username (masked): 'ro******'.
+14:41:19.630 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+14:41:19.630 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+14:41:19.933 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@165973f5 [wrapping: com.mysql.jdbc.JDBC4Connection@4acbe549]] will not be managed by Spring
+14:41:19.941 [main] DEBUG c.e.n.s.d.T.selectByPrimaryKey - ==>  Preparing: select titid, titname, tit_A, tit_B, tit_C, tit_D, tit_E, tit_F, titanswer, titscore, couid, tqid from title where titid = ? 
+14:41:19.978 [main] DEBUG c.e.n.s.d.T.selectByPrimaryKey - ==> Parameters: 1(Integer)
+14:41:20.067 [main] DEBUG c.e.n.s.d.T.selectByPrimaryKey - <==      Total: 1
+14:41:20.072 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18acd52c]
+14:41:20.093 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kihxwy87fumh0|6433aa85,name=1hgf4p79kihxwy87fumh0|6433aa85 unregistered.
+14:41:20.094 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+14:41:20.094 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.resourcepool.BasicResourcePool - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@397276a1
+16:19:03.382 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+16:19:03.393 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+16:19:03.393 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:19:03.393 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:19:03.393 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:19:03.394 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:19:03.396 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:19:03.396 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:19:03.397 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:19:03.397 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:19:03.692 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+16:19:03.733 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kilfnnk1hw3iw4|60bd76d7,name=1hgf4p79kilfnnk1hw3iw4|60bd76d7 registered.
+16:19:03.769 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kilfnnk1hw3iw4|60bd76d7,name=1hgf4p79kilfnnk1hw3iw4|60bd76d7 unregistered, in order to be reregistered after update.
+16:19:03.769 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kilfnnk1hw3iw4|60bd76d7,name=1hgf4p79kilfnnk1hw3iw4|60bd76d7 registered.
+16:19:03.901 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:19:04.026 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+16:19:04.026 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+16:19:04.027 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+16:19:04.028 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+16:19:04.028 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+16:19:04.029 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:19:04.029 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:19:04.131 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+16:19:04.132 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+16:19:04.132 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+16:19:04.133 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+16:19:04.134 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+16:19:04.134 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: TestQuestion.class
+16:19:04.135 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+16:19:04.136 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:19:04.136 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+16:19:04.136 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+16:19:04.138 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+16:19:04.138 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+16:19:04.139 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+16:19:04.139 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+16:19:04.140 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+16:19:04.140 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+16:19:04.141 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+16:19:04.141 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+16:19:04.141 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+16:19:04.142 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+16:19:04.143 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+16:19:04.143 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+16:19:04.143 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+16:19:04.144 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/TestQuestion.class
+16:19:04.144 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/TestQuestion.class
+16:19:04.145 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  %cn/edu/nuc/spring/entity/TestQuestion  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+16:19:04.146 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+16:19:04.146 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+16:19:04.147 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+16:19:04.148 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+16:19:04.148 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+16:19:04.149 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+16:19:04.150 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+16:19:04.150 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+16:19:04.151 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.TestQuestion matches criteria [is assignable to Object]
+16:19:04.152 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+16:19:04.153 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+16:19:04.206 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:19:04.404 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+16:19:04.442 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+16:19:04.490 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+16:19:04.533 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+16:19:04.585 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+16:19:04.626 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TestQuestionMapper.xml]'
+16:19:04.678 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+16:19:05.013 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+16:19:05.015 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+16:19:05.034 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+16:19:05.047 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+16:19:05.048 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+16:19:05.050 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy28
+16:19:05.053 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:19:05.055 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+16:19:05.057 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+16:19:05.057 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16:19:05.058 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+16:19:05.789 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+16:19:05.797 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7adf485b] was not registered for synchronization because synchronization is not active
+16:19:05.848 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgf4p79kilfnnk1hw3iw4|60bd76d7, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgf4p79kilfnnk1hw3iw4|60bd76d7, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/four, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+16:19:05.866 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:19:05.867 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:19:05.867 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:19:05.867 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:19:05.869 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@2934fa09 config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+16:19:05.869 [main] DEBUG c.m.v.c.i.C3P0PooledConnectionPoolManager - Created new pool for auth, username (masked): 'ro******'.
+16:19:05.870 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+16:19:05.870 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+16:19:06.197 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@3e85217c [wrapping: com.mysql.jdbc.JDBC4Connection@165973f5]] will not be managed by Spring
+16:19:06.204 [main] DEBUG c.e.n.spring.dao.TitleMapper.tqLists - ==>  Preparing: select tqid, tqname, tqscore, tqinstruduce, tqstarttime, tqstoptime from testquestion 
+16:19:06.242 [main] DEBUG c.e.n.spring.dao.TitleMapper.tqLists - ==> Parameters: 
+16:19:06.273 [main] DEBUG c.e.n.spring.dao.TitleMapper.tqLists - <==      Total: 2
+16:19:06.279 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7adf485b]
+16:19:06.289 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kilfnnk1hw3iw4|60bd76d7,name=1hgf4p79kilfnnk1hw3iw4|60bd76d7 unregistered.
+16:19:06.290 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+16:19:06.290 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.resourcepool.BasicResourcePool - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@4c4aecd0
+16:19:06.290 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.c.i.C3P0PooledConnectionPool - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@4c4aecd0
+16:39:35.814 [MLog-Init-Reporter] INFO  com.mchange.v2.log.MLog - MLog clients using slf4j logging.
+16:39:35.825 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - Reading VM config for path list /com/mchange/v2/log/default-mchange-log.properties, /mchange-commons.properties, /c3p0.properties, hocon:/reference,/application,/c3p0,/, /mchange-log.properties, /
+16:39:35.825 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:39:35.825 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:39:35.825 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:39:35.826 [MLog-Init-Reporter] DEBUG com.mchange.v2.log.MLog - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:39:35.828 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:39:35.828 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:39:35.828 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:39:35.828 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:39:36.127 [main] INFO  com.mchange.v2.c3p0.C3P0Registry - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+16:39:36.168 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kim62ltpyhwjz|556b8717,name=1hgf4p79kim62ltpyhwjz|556b8717 registered.
+16:39:36.198 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kim62ltpyhwjz|556b8717,name=1hgf4p79kim62ltpyhwjz|556b8717 unregistered, in order to be reregistered after update.
+16:39:36.199 [main] DEBUG c.m.v.c.m.DynamicPooledDataSourceManagerMBean - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kim62ltpyhwjz|556b8717,name=1hgf4p79kim62ltpyhwjz|556b8717 registered.
+16:39:36.277 [main] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+16:39:36.364 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VFS
+16:39:36.364 [main] DEBUG org.apache.ibatis.io.JBoss6VFS - JBoss 6 VFS API is not available in this environment.
+16:39:36.365 [main] DEBUG org.apache.ibatis.io.VFS - Class not found: org.jboss.vfs.VirtualFile
+16:39:36.365 [main] DEBUG org.apache.ibatis.io.VFS - VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+16:39:36.366 [main] DEBUG org.apache.ibatis.io.VFS - Using VFS adapter org.apache.ibatis.io.DefaultVFS
+16:39:36.366 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:39:36.367 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:39:36.466 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Admin.class
+16:39:36.467 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Course.class
+16:39:36.468 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Question.class
+16:39:36.469 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Role.class
+16:39:36.470 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Student.class
+16:39:36.470 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: TestQuestion.class
+16:39:36.471 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: Title.class
+16:39:36.472 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Listing file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity
+16:39:36.472 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+16:39:36.472 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Admin.class
+16:39:36.473 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 T  cn/edu/nuc/spring/entity/Admin  java/lang/Object adid Ljava/lang/Integer; adname Ljava/lang/String; RuntimeVisibleAnnotations .Lorg/hibernate/validator/constraints/NotEmpty; adpass role Lcn/edu/nuc/spring/entity/Role; adsessionid <init> ()V Code
+16:39:36.474 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+16:39:36.474 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Course.class
+16:39:36.475 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 0  cn/edu/nuc/spring/entity/Course  java/lang/Object couid Ljava/lang/Integer; couname Ljava/lang/String; 	couremark 	coustatus <init> ()V Code
+16:39:36.476 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+16:39:36.476 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Question.class
+16:39:36.477 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  !cn/edu/nuc/spring/entity/Question  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+16:39:36.478 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+16:39:36.478 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Role.class
+16:39:36.478 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 C  cn/edu/nuc/spring/entity/Role  java/lang/Object  java/io/Serializable roleid Ljava/lang/Integer; rolename Ljava/lang/String; 
+16:39:36.479 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+16:39:36.479 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Student.class
+16:39:36.480 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 Q   cn/edu/nuc/spring/entity/Student  java/lang/Object stuid Ljava/lang/Integer; stuname Ljava/lang/String; stupass stuemail stuphone stubirth Ljava/util/Date; stusex claid deptid roleid <init> ()V Code
+16:39:36.480 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/TestQuestion.class
+16:39:36.480 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/TestQuestion.class
+16:39:36.481 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 =  %cn/edu/nuc/spring/entity/TestQuestion  java/lang/Object tqid Ljava/lang/Integer; tqname Ljava/lang/String; tqscore tqinstruduce tqstarttime Ljava/util/Date; 
+16:39:36.482 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Find JAR URL: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+16:39:36.482 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Not a JAR: file:/E:/workspace/springmvc/target/classes/cn/edu/nuc/spring/entity/Title.class
+16:39:36.483 [main] DEBUG org.apache.ibatis.io.DefaultVFS - Reader entry: ����   3 �  cn/edu/nuc/spring/entity/Title  java/lang/Object titid Ljava/lang/Integer; titname Ljava/lang/String; titA titB titC titD titE titF 	titanswer titscore couid couname tqid tqname <init> ()V Code
+16:39:36.484 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Admin matches criteria [is assignable to Object]
+16:39:36.484 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Course matches criteria [is assignable to Object]
+16:39:36.485 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Question matches criteria [is assignable to Object]
+16:39:36.485 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Role matches criteria [is assignable to Object]
+16:39:36.486 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Student matches criteria [is assignable to Object]
+16:39:36.487 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.TestQuestion matches criteria [is assignable to Object]
+16:39:36.487 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class cn.edu.nuc.spring.entity.Title matches criteria [is assignable to Object]
+16:39:36.488 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: 'cn.edu.nuc.spring.entity' for aliases
+16:39:36.543 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: 'class path resource [mybatis-config.xml]'
+16:39:36.709 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\AdminMapper.xml]'
+16:39:36.744 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\CourseMapper.xml]'
+16:39:36.794 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\QuestionMapper.xml]'
+16:39:36.838 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\RoleMapper.xml]'
+16:39:36.890 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\StudentMapper.xml]'
+16:39:36.932 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TestQuestionMapper.xml]'
+16:39:36.988 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [E:\workspace\springmvc\target\classes\cn\edu\nuc\spring\mapper\TitleMapper.xml]'
+16:39:37.322 [main] DEBUG org.jboss.logging - Logging Provider: org.jboss.logging.Slf4jLoggerProvider
+16:39:37.324 [main] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 5.2.4.Final
+16:39:37.346 [main] DEBUG o.h.v.i.e.r.DefaultTraversableResolver - Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+16:39:37.362 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+16:39:37.363 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+16:39:37.366 [main] DEBUG o.h.v.i.engine.ConfigurationImpl - Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy28
+16:39:37.368 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - Trying to load META-INF/validation.xml for XML based Validator configuration.
+16:39:37.369 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via user class loader
+16:39:37.370 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via TCCL
+16:39:37.371 [main] DEBUG o.h.v.i.xml.ResourceLoaderHelper - Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+16:39:37.371 [main] DEBUG o.h.v.i.xml.ValidationXmlParser - No META-INF/validation.xml found. Using annotation based configuration only.
+16:39:38.182 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+16:39:38.195 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c31df1] was not registered for synchronization because synchronization is not active
+16:39:38.254 [main] INFO  c.m.v.c.i.AbstractPoolBackedDataSource - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgf4p79kim62ltpyhwjz|556b8717, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgf4p79kim62ltpyhwjz|556b8717, idleConnectionTestPeriod -> 0, initialPoolSize -> 3, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/four, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 0, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 15, maxStatements -> 0, maxStatementsPerConnection -> 0, minPoolSize -> 3, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+16:39:38.273 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-commons.properties' could not be found. Skipping.
+16:39:38.273 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/mchange-log.properties' could not be found. Skipping.
+16:39:38.273 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier '/c3p0.properties' could not be found. Skipping.
+16:39:38.273 [main] DEBUG com.mchange.v2.cfg.MConfig - The configuration file for resource identifier 'hocon:/reference,/application,/c3p0,/' could not be found. Skipping.
+16:39:38.275 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - com.mchange.v2.resourcepool.BasicResourcePool@626f331d config: [start -> 3; min -> 3; max -> 15; inc -> 3; num_acq_attempts -> 30; acq_attempt_delay -> 1000; check_idle_resources_delay -> 0; max_resource_age -> 0; max_idle_time -> 0; excess_max_idle_time -> 0; destroy_unreturned_resc_time -> 0; expiration_enforcement_delay -> 0; break_on_acquisition_failure -> false; debug_store_checkout_exceptions -> false; force_synchronous_checkins -> false]
+16:39:38.276 [main] DEBUG c.m.v.c.i.C3P0PooledConnectionPoolManager - Created new pool for auth, username (masked): 'ro******'.
+16:39:38.276 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - acquire test -- pool size: 0; target_pool_size: 3; desired target? 1
+16:39:38.276 [main] DEBUG c.m.v.resourcepool.BasicResourcePool - awaitAvailable(): [unknown]
+16:39:38.563 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@50704710 [wrapping: com.mysql.jdbc.JDBC4Connection@7b4994b1]] will not be managed by Spring
+16:39:38.572 [main] DEBUG c.e.n.s.dao.TitleMapper.courseLists - ==>  Preparing: select couid, couname, couremark, coustatus from course 
+16:39:38.608 [main] DEBUG c.e.n.s.dao.TitleMapper.courseLists - ==> Parameters: 
+16:39:38.637 [main] DEBUG c.e.n.s.dao.TitleMapper.courseLists - <==      Total: 3
+16:39:38.644 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c31df1]
+16:39:38.658 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - MBean: com.mchange.v2.c3p0:type=PooledDataSource,identityToken=1hgf4p79kim62ltpyhwjz|556b8717,name=1hgf4p79kim62ltpyhwjz|556b8717 unregistered.
+16:39:38.659 [Thread-1] DEBUG c.m.v.c.m.ActiveManagementCoordinator - C3P0Registry mbean unregistered.
+16:39:38.659 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.resourcepool.BasicResourcePool - Preparing to destroy resource: com.mchange.v2.c3p0.impl.NewPooledConnection@2f6918a3
+16:39:38.660 [Resource Destroyer in BasicResourcePool.close()] DEBUG c.m.v.c.i.C3P0PooledConnectionPool - Preparing to destroy PooledConnection: com.mchange.v2.c3p0.impl.NewPooledConnection@2f6918a3

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.edu.nuc.spring.dao.StudentMapper">
+  <resultMap id="BaseResultMap" type="cn.edu.nuc.spring.entity.Student">
+    <id column="stuid" jdbcType="INTEGER" property="stuid" />
+    <result column="stuname" jdbcType="VARCHAR" property="stuname" />
+    <result column="stupass" jdbcType="VARCHAR" property="stupass" />
+    <result column="stuemail" jdbcType="VARCHAR" property="stuemail" />
+    <result column="stuphone" jdbcType="VARCHAR" property="stuphone" />
+    <result column="stubirth" jdbcType="DATE" property="stubirth" />
+    <result column="stusex" jdbcType="INTEGER" property="stusex" />
+    <result column="claid" jdbcType="INTEGER" property="claid" />
+    <result column="deptid" jdbcType="INTEGER" property="deptid" />
+    <result column="roleid" jdbcType="INTEGER" property="roleid" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    stuid, stuname, stupass, stuemail, stuphone, stubirth, stusex, claid, deptid, roleid
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from student
+    where stuid = #{stuid,jdbcType=INTEGER}
+  </select>
+  <select id="selectOneStudent" parameterType="cn.edu.nuc.spring.entity.Student" resultType="cn.edu.nuc.spring.entity.Student">
+		 SELECT * FROM
+		(SELECT s.*,c.claname FROM student s LEFT JOIN classes c ON s.claid=c.claid) sc
+		LEFT JOIN dept d ON sc.deptid=d.deptid
+		<where>
+		   <if test="stuname!=null and stuname!=''">
+		       stuname=#{stuname,jdbcType=VARCHAR}
+		   </if>
+		   <if test="stupass!=null and stupass!=''">
+		      and stupass=#{stupass,jdbcType=VARCHAR}
+		   </if>
+		</where>
+  </select>
+  <select id="examLists" resultType="cn.edu.nuc.spring.entity.Exam">
+	SELECT a.*,ef.efid FROM (SELECT
+	e.*
+	FROM
+	student s
+	LEFT JOIN exam e ON s.claid = e.claid 
+	<where> 
+	e.examstoptime &gt; NOW()
+	<if test="stuname!=null and stuname!=''">
+	        and s.stuname=#{stuname,jdbcType=VARCHAR}
+	</if>
+	</where>
+	) a
+	LEFT JOIN examfinished ef ON a.examid=ef.examid
+	WHERE ef.efid IS NULL
+  </select>
+  <select id="historyExamList" parameterType="java.lang.String" resultType="cn.edu.nuc.spring.entity.ExamFinished">
+	SELECT b.examname,b.examid,b.stuname FROM examfinished ef LEFT JOIN
+	(SELECT e.*,a.stuname FROM exam e LEFT JOIN
+	(SELECT c.*,s.stuname FROM classes c LEFT JOIN student s ON c.claid=s.claid
+	<where>
+		<if test="stuname!=null and stuname!=''">
+			stuname=#{stuname,jdbcType=VARCHAR}
+		</if>
+	</where>
+	) a
+	ON e.claid=a.claid) b ON ef.tqid=b.tqid
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from student
+    where stuid = #{stuid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="cn.edu.nuc.spring.entity.Student">
+    insert into student (stuid, stuname, stupass, 
+      stuemail, stuphone, stubirth, 
+      stusex, claid, deptid, 
+      roleid)
+    values (#{stuid,jdbcType=INTEGER}, #{stuname,jdbcType=VARCHAR}, #{stupass,jdbcType=VARCHAR}, 
+      #{stuemail,jdbcType=VARCHAR}, #{stuphone,jdbcType=VARCHAR}, #{stubirth,jdbcType=DATE}, 
+      #{stusex,jdbcType=INTEGER}, #{claid,jdbcType=INTEGER}, #{deptid,jdbcType=INTEGER}, 
+      #{roleid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.edu.nuc.spring.entity.Student">
+    insert into student
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="stuid != null">
+        stuid,
+      </if>
+      <if test="stuname != null">
+        stuname,
+      </if>
+      <if test="stupass != null">
+        stupass,
+      </if>
+      <if test="stuemail != null">
+        stuemail,
+      </if>
+      <if test="stuphone != null">
+        stuphone,
+      </if>
+      <if test="stubirth != null">
+        stubirth,
+      </if>
+      <if test="stusex != null">
+        stusex,
+      </if>
+      <if test="claid != null">
+        claid,
+      </if>
+      <if test="deptid != null">
+        deptid,
+      </if>
+      <if test="roleid != null">
+        roleid,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="stuid != null">
+        #{stuid,jdbcType=INTEGER},
+      </if>
+      <if test="stuname != null">
+        #{stuname,jdbcType=VARCHAR},
+      </if>
+      <if test="stupass != null">
+        #{stupass,jdbcType=VARCHAR},
+      </if>
+      <if test="stuemail != null">
+        #{stuemail,jdbcType=VARCHAR},
+      </if>
+      <if test="stuphone != null">
+        #{stuphone,jdbcType=VARCHAR},
+      </if>
+      <if test="stubirth != null">
+        #{stubirth,jdbcType=DATE},
+      </if>
+      <if test="stusex != null">
+        #{stusex,jdbcType=INTEGER},
+      </if>
+      <if test="claid != null">
+        #{claid,jdbcType=INTEGER},
+      </if>
+      <if test="deptid != null">
+        #{deptid,jdbcType=INTEGER},
+      </if>
+      <if test="roleid != null">
+        #{roleid,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.edu.nuc.spring.entity.Student">
+    update student
+    <set>
+      <if test="stuname != null">
+        stuname = #{stuname,jdbcType=VARCHAR},
+      </if>
+      <if test="stupass != null">
+        stupass = #{stupass,jdbcType=VARCHAR},
+      </if>
+      <if test="stuemail != null">
+        stuemail = #{stuemail,jdbcType=VARCHAR},
+      </if>
+      <if test="stuphone != null">
+        stuphone = #{stuphone,jdbcType=VARCHAR},
+      </if>
+      <if test="stubirth != null">
+        stubirth = #{stubirth,jdbcType=DATE},
+      </if>
+      <if test="stusex != null">
+        stusex = #{stusex,jdbcType=INTEGER},
+      </if>
+      <if test="claid != null">
+        claid = #{claid,jdbcType=INTEGER},
+      </if>
+      <if test="deptid != null">
+        deptid = #{deptid,jdbcType=INTEGER},
+      </if>
+      <if test="roleid != null">
+        roleid = #{roleid,jdbcType=INTEGER},
+      </if>
+    </set>
+    where stuid = #{stuid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.edu.nuc.spring.entity.Student">
+    update student
+    set stuname = #{stuname,jdbcType=VARCHAR},
+      stupass = #{stupass,jdbcType=VARCHAR},
+      stuemail = #{stuemail,jdbcType=VARCHAR},
+      stuphone = #{stuphone,jdbcType=VARCHAR},
+      stubirth = #{stubirth,jdbcType=DATE},
+      stusex = #{stusex,jdbcType=INTEGER},
+      claid = #{claid,jdbcType=INTEGER},
+      deptid = #{deptid,jdbcType=INTEGER},
+      roleid = #{roleid,jdbcType=INTEGER}
+    where stuid = #{stuid,jdbcType=INTEGER}
+  </update>
+ <update id="updateSessionID">
+       UPDATE student SET sessionid=#{sessionid} WHERE stuname=#{stuname} AND stuid=#{stuid}
+  </update>
+</mapper>
